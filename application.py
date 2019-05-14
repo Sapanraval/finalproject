@@ -2,7 +2,7 @@ from flask import Flask, abort, redirect, render_template, request, flash, url_f
 import smtplib
 from form import ContactForm
 from flask_mail import Mail, Message
-from flask_wtf import Form 
+from flask_wtf import Form
 from wtforms import TextField, TextAreaField, SubmitField, validators, ValidationError
 import os
 
@@ -19,11 +19,9 @@ app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = 'sapanravalcs50@gmail.com'
-app.config["MAIL_PASSWORD"] = 'spring2019'
+app.config["MAIL_PASSWORD"] = 'cs502019'
 
 mail.init_app(app)
-
-
 
 @app.route("/")
 @app.route("/index")
@@ -57,7 +55,7 @@ def contact():
             %s
             """ % (form.name.data, form.email.data, form.message.data)
             mail.send(msg)
-            
+
             # Display flash message once email received.
             flash(f'Thank you for your Message {form.name.data}! I will reach out to you soon', 'success')
             return redirect(url_for('index'))
