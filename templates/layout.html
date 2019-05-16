@@ -67,7 +67,7 @@
           <a class="nav-link" href="{{ url_for('education') }}">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('certification') }}">Cerfication</a>
+          <a class="nav-link" href="{{ url_for('certification') }}">Certifications</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('skills') }}">Skills</a>
@@ -76,15 +76,13 @@
           <a class="nav-link" href="/form">Contact Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/static/Sapan_Raval_Product_Owner_Resume.pdf" download>Download Resume</a>
+          <a class="nav-link" href="/static/Sapan_Raval_Product_Owner_Resume.pdf" download>Resume</a>
         </li>
       </ul>
     </div>
   </nav>
   </div>
   
-    {% block content %}{% endblock %}
-    
 <script>
     $(function() {
         // this will get the full URL at the address bar
@@ -102,6 +100,7 @@
     });        
 </script>
 
+{% block content %}{% endblock %}
 </body>
 
 
