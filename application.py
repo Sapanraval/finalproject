@@ -58,7 +58,7 @@ def contact():
             mail.send(msg)
 
             # Display flash message once email received.
-            flash(f'Thank you for your Message {form.name.data}! I will reach out to you soon', 'success')
+            flash(f'Thank you for your message {form.name.data}! I will reach out to you soon', 'success')
             return redirect(url_for('index'))
     return render_template('form.html',form=form)
 
