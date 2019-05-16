@@ -6,7 +6,8 @@ from flask_wtf import Form
 from wtforms import TextField, TextAreaField, SubmitField, validators, ValidationError
 import os
 
-## You may need to install flask_mail and flask_wtf
+## You need to install flaks_mail and flask_wtf
+
 
 mail = Mail()
 

@@ -25,10 +25,9 @@
     <!-- Bootstrap core JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
-  
+
   <!-- Plugin JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
 
 </head>
 
@@ -67,7 +66,7 @@
           <a class="nav-link" href="{{ url_for('education') }}">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('certification') }}">Cerfication</a>
+          <a class="nav-link" href="{{ url_for('certification') }}">Certifications</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('skills') }}">Skills</a>
@@ -76,15 +75,13 @@
           <a class="nav-link" href="/form">Contact Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/static/Sapan_Raval_Product_Owner_Resume.pdf" download>Download Resume</a>
+          <a class="nav-link" href="/static/Sapan_Raval_Product_Owner_Resume.pdf" download>Resume</a>
         </li>
       </ul>
     </div>
   </nav>
   </div>
-  
-    {% block content %}{% endblock %}
-    
+
 <script>
     $(function() {
         // this will get the full URL at the address bar
@@ -99,9 +96,10 @@
                $(this).closest("li").parent().parent().addClass("active");
             }
         });
-    });        
+    });
 </script>
 
+{% block content %}{% endblock %}
 </body>
 
 
