@@ -20,7 +20,7 @@ app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = 'sapanravalcs50@gmail.com'
-app.config["MAIL_PASSWORD"] = 'spring2019'
+app.config["MAIL_PASSWORD"] = 'cs502019'
 
 mail.init_app(app)
 
